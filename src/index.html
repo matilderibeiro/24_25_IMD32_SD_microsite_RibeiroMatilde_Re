@@ -5,6 +5,12 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -28,7 +34,71 @@
         <div class="white"></div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="scroll-bloc-horizontal">
+        <div class="scroll-bloc-horizontal-train">
+          <div class="white container"></div>
+          <div class="white"></div>
+          <div class="container-scroll">
+            <div class="pin-wrap">
+              <img src="../img/train.png" alt="image du train qui roule" />
+            </div>
+          </div>
+          <div class="white"></div>
+        </div>
+        <div class="scroll-bloc-horizontal-papillon">
+          <div class="white container"></div>
+          <div class="white"></div>
+          <div class="container-scroll">
+            <div class="pin-wrap">
+              <img
+                src="../img/papillon.png"
+                id="papillon"
+                width="100"
+                alt="papillon png"
+              />
+            </div>
+          </div>
+          <div class="white"></div>
+        </div>
+        <div class="scroll-bloc-horizontal-view">
+          <div class="white container"></div>
+          <div class="white"></div>
+          <div class="container-scroll">
+            <div class="pin-wrap">
+              <img
+                src="../img/paysage-train-exterieur.png"
+                alt="paysage du train exterieur"
+              />
+              <img
+                src="../img/personnage-interrieur-train.png"
+                alt="Personnage qui regarde a l'exterieur du train"
+              />
+              <img
+                src="../img/img-pied-ballon.png"
+                alt="image d'un pied qui marche vers un ballon"
+              />
+              <img
+                src="../img/img-peronnage-zoom.png"
+                alt="Image du personnage avec un zoom sur sont visage"
+              />
+            </div>
+          </div>
+          <div class="white"></div>
+        </div>
+        <div class="end-main">
+          <div class="option-present&pass">
+            <button>Explorer le passé</button>
+            <button>Rester dans le présent</button>
+          </div>
+          <div class="trailler">
+            <video width="640" height="360" controls autoplay loop muted>
+              <source src="#" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <script src="js/main.js" type="module"></script>
   </body>

@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <link rel="icon" href="../img/papillon.png" type="image/png" />
+    <title>Quartier Lointain</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,21 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="intro">
+      <div class="header-title-intro">
         <img
-          src="../img/Titre-quartier-lointain.png"
-          width="750"
+          src="/img/Titre-quartier-lointain.png"
           alt="Titre-quartier-lointain"
+          class="header-intro"
         />
       </div>
-      <div class="scroll-butterfly">
-        <div id="container">
-          <div class="bloc-click">cliquez ici!</div>
+      <div class="header-scroll-butterfly">
           <img
             src="../img/papillon.png"
+            class="header-butterfly"
             id="papillon"
             width="100"
             alt="papillon png"
@@ -87,10 +93,14 @@
           <div class="white"></div>
         </div>
       </div>
-      <div class="end-main">
+      <div class="end-main" id="retourn">
         <div class="option-present&pass">
-          <button>Explorer le passé</button>
-          <button>Rester dans le présent</button>
+          <button class="button-pass-present">
+            <a href="pass">Explorer le passé</a>
+          </button>
+          <button class="button-pass-present">
+            <a href="present">Rester dans le présent</a>
+          </button>
         </div>
         <div class="trailler">
           <video width="640" height="360" controls autoplay loop muted>
@@ -98,7 +108,7 @@
           </video>
         </div>
       </div>
-      <div class="option-pass">
+      <div class="option-pass" id="pass">
         <div class="scroll-bloc">
           <div class="white"></div>
           <div class="scroll-1">
@@ -132,10 +142,12 @@
               <span>-Jirô Taniguchi</span>
             </p>
           </div>
-          <button>Revenir au présent</button>
+          <button>
+            <a href="retourn">Revenir au présent</a>
+          </button>
         </div>
       </div>
-      <div class="option-present">
+      <div class="option-present" id="present">
         <div class="scroll-bloc">
           <div class="white"></div>
           <div class="scroll-1">
@@ -152,17 +164,19 @@
               <span>-Marcel Proust</span>
             </p>
           </div>
-          <button>Explorer le passé</button>
+          <button>
+            <a href="retourn">Explorer le passé</a>
+          </button>
         </div>
       </div>
     </main>
     <footer>
       <div class="footer-title">
-        <h1>Quartier lointain</h1>
-        <h2>Jirô Taniguchi</h2>
+        <div class="col-5 offset-1"><h1>Quartier lointain</h1></div>
+        <div class="col-6"><h2>Jirô Taniguchi</h2></div>
       </div>
       <div class="footer-container-shop-book">
-        <div class="footer-book-mochup">
+        <div class="footer-book-mockup">
           <img
             src="../img/book-close.png"
             alt="Imgae livre fermer couverture"

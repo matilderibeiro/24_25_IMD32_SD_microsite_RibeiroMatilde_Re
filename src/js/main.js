@@ -2,8 +2,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const titleheader = document.querySelector("header");
-const titleImg = document.querySelector(".header-title");
-const butterfly = document.querySelector(".header-butterfly-img");
+const titleImg = document.querySelector(".header-intro");
+const butterfly = document.querySelector(".header-butterfly");
 
 var tl = gsap.timeline();
 tl.to(titleImg, { opacity: 1 });

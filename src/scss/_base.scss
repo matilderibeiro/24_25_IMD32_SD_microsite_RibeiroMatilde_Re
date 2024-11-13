@@ -18,6 +18,8 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -57,4 +59,13 @@ p {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.white {
+  height: 300px;
+}
+
+video {
+  display: flex;
+  align-self: center;
 }

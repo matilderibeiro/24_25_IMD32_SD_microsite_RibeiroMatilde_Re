@@ -94,11 +94,11 @@
         </div>
       </div>
       <div class="end-main" id="retourn">
-        <div class="option-present&pass">
-          <button class="button-pass-present">
-            <a href="pass">Explorer le passé</a>
+        <div class="button-option-present-pass">
+          <button class="button-pass-present" id="js-btn-before">
+            Explorer le passé
           </button>
-          <button class="button-pass-present">
+          <button class="button-pass-present" id="js-btn-now">
             <a href="present">Rester dans le présent</a>
           </button>
         </div>
@@ -108,29 +108,35 @@
           </video>
         </div>
       </div>
-      <div class="option-pass" id="pass">
+      <div class="story-before is-hidden">
         <div class="scroll-bloc">
           <div class="white"></div>
           <div class="scroll-1">
             <img src="../img/paysage-train-exterieur.png" alt="" />
           </div>
-          <div class="scroll-2">
-            <img src="../img/mains.png" alt="" />
-          </div>
-          <div class="scroll-3">
-            <img src="../img/img-visage-enfant.png" alt="" />
+          <div class="scroll-container">
+            <div class="scroll-2">
+              <img src="../img/mains.png" alt="" />
+            </div>
+            <div class="scroll-3">
+              <img src="../img/img-visage-enfant.png" alt="" />
+            </div>
           </div>
           <div class="scroll-4">
             <img src="../img/img-famille-passe.png" alt="" />
           </div>
-          <div class="scroll-5">
-            <img src="../img/photo-classe.png" alt="" />
-          </div>
-          <div class="scroll-6">
-            <img src="../img/img-paysage.png" alt="" />
-          </div>
-          <div class="scroll-7">
-            <img src="../img/img-ecole.png" alt="" />
+          <div class="scroll-container">
+            <div class="scroll-5">
+              <img src="../img/photo-classe.png" alt="" />
+            </div>
+            <div class="scroll-container-view">
+              <div class="scroll-6">
+                <img src="../img/img-paysage.png" alt="" />
+              </div>
+              <div class="scroll-7">
+                <img src="../img/img-ecole.png" alt="" />
+              </div>
+            </div>
           </div>
           <div class="white"></div>
         </div>
@@ -149,10 +155,10 @@
           </div>
         </div>
       </div>
-      <div class="option-present" id="present">
+      <div class="story-now is-hidden">
         <div class="scroll-bloc">
           <div class="white"></div>
-          <div class="scroll-1">
+          <div class="scroll-8">
             <img src="../img/img-famille-present.png" alt="" />
           </div>
           <div class="white"></div>
@@ -241,6 +247,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

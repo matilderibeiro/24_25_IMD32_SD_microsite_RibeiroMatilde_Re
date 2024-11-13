@@ -1,0 +1,23 @@
+button {
+  display: flex;
+  width: 189px;
+  height: 55px;
+  padding: 29px 156px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 2px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+  font-family: "Instrument Serif";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button-pass-present {
+  display: flex;
+  flex-direction: row;
+}

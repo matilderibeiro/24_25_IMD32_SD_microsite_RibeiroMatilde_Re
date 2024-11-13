@@ -11,8 +11,10 @@
 }
 
 .footer-image-logo-title {
-  display: flex;
-  align-self: center;
+  width: 25%;
+  margin: auto;
+  padding-top: 51px;
+  padding-bottom: 23px;
 }
 
 .footer-title {
@@ -21,20 +23,17 @@
   align-items: center;
 }
 
+.footer-text {
+  margin: 11px 90px 26px 0px;
+}
+
 .footer-container-shop-book {
   display: flex;
   flex-direction: row;
 }
 
 .footer-book-mockup {
-  height: 513.1px;
-  flex-shrink: 0;
-}
-
-.footer-book-mockup > img {
-  display: flex;
-  width: 696px;
-  height: 682px;
-  align-items: center;
-  flex-shrink: 0;
+  width: 110%;
+  margin-top: -90px;
+  margin-left: -30px;
 }

@@ -1,0 +1,40 @@
+.footer-end {
+  background: var(--green-light);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.footer-end p {
+  padding: 0 0 23px 34px;
+}
+
+.footer-image-logo-title {
+  display: flex;
+  align-self: center;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-container-shop-book {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-book-mockup {
+  height: 513.1px;
+  flex-shrink: 0;
+}
+
+.footer-book-mockup > img {
+  display: flex;
+  width: 696px;
+  height: 682px;
+  align-items: center;
+  flex-shrink: 0;
+}

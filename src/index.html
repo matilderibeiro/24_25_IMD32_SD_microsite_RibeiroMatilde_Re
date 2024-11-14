@@ -40,7 +40,7 @@
         <div class="white"></div>
       </div>
     </header>
-    <main>
+    <main class="is-diseaper">
       <div class="scroll-bloc-horizontal">
         <div class="scroll-bloc-horizontal-train">
           <div class="white container"></div>
@@ -93,13 +93,13 @@
           <div class="white"></div>
         </div>
       </div>
-      <div class="end-main" id="retourn">
+      <div class="end-main chose">
         <div class="button-option-present-pass">
           <button class="button-pass-present button-pass" id="js-btn-before">
             <a>Explorer le passé</a>
           </button>
           <button class="button-pass-present button-present" id="js-btn-now">
-            <a href="present">Rester dans le présent</a>
+            <a>Rester dans le présent</a>
           </button>
         </div>
         <div class="trailler">
@@ -148,9 +148,9 @@
               <span>-Jirô Taniguchi</span>
             </p>
           </div>
-          <div class="button-option">
+          <div class="button-option" id="js-btn-choise-past">
             <button>
-              <a href="retourn">Revenir au présent</a>
+              <a>Revenir au présent</a>
             </button>
           </div>
         </div>
@@ -172,9 +172,9 @@
               <span>-Marcel Proust</span>
             </p>
           </div>
-          <div class="button-option">
+          <div class="button-option" id="js-btn-choise-present">
             <button>
-              <a href="retourn">Explorer le passé</a>
+              <a>Explorer le passé</a>
             </button>
           </div>
         </div>
@@ -191,11 +191,18 @@
       </div>
       <div class="footer-container-shop-book">
         <div class="col-lg-6 col-12">
-          <img
-            src="../img/book-close.png"
-            alt="Imgae livre fermer couverture"
-            class="footer-book-mockup"
-          />
+          <div class="footer-container-img">
+            <img
+              src="../img/book-close.png"
+              alt="Imgae livre fermer couverture"
+              class="footer-book-mockup"
+            />
+            <img 
+              src="/img/book-open.png" 
+              alt="image mockup livre ouvert"
+              class="footer-book-mockup-hover"
+            />
+          </div>
         </div>
         <div class="col-lg-4 col-12">
           <div class="footer-resume">
@@ -247,7 +254,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="js/main.js" type="module"></script>

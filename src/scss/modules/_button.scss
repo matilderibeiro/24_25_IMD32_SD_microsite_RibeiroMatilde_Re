@@ -15,6 +15,7 @@ button {
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button-pass-present {
@@ -23,7 +24,7 @@ button {
   margin-top: 450px;
 }
 
-.button-pass-present > a {
+button > a {
   text-decoration: none;
 }
 

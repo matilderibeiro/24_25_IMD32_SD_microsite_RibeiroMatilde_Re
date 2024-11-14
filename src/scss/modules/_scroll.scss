@@ -7,10 +7,14 @@
 .scroll-7,
 .scroll-8 {
   opacity: 0;
-  margin-top: 40px;
+  margin: 50px 50px 0 50px;
 }
 
 .scroll-container {
   display: flex;
   flex-direction: row;
+}
+
+.scroll-4 {
+  margin: 200px;
 }

@@ -18,8 +18,13 @@ button {
 }
 
 .button-pass-present {
-  display: flex;
-  flex-direction: row;
+  height: 55px;
+  padding: 14px 36px;
+  margin-top: 450px;
+}
+
+.button-pass-present > a {
+  text-decoration: none;
 }
 
 .button-footer {

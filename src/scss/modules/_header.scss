@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 
 .header-intro {
-  width: 60%;
+  width: 55%;
 }
 
 .header-butterfly {

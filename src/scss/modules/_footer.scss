@@ -11,10 +11,14 @@
 }
 
 .footer-image-logo-title {
-  width: 25%;
+  width: 10%;
   margin: auto;
-  padding-top: 51px;
-  padding-bottom: 23px;
+  padding-top: 45px;
+  padding-bottom: 33px;
+
+  img {
+    width: 200px;
+  }
 }
 
 .footer-title {
@@ -30,12 +34,40 @@
 .footer-container-shop-book {
   display: flex;
   flex-direction: row;
+  margin-bottom: 130px;
+}
+
+.footer-container-img {
+  position: relative;
+}
+
+.footer-container-img img {
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer-container-img img.footer-book-mockup-hover {
+  opacity: 0;
+}
+
+.footer-container-img:hover img.footer-book-mockup-hover {
+  opacity: 1;
+}
+
+.footer-container-img:hover img.footer-book-mockup {
+  opacity: 0;
 }
 
 .footer-book-mockup {
-  width: 105%;
+  width: 95%;
   margin-top: -80px;
   margin-left: -50px;
+}
+
+.footer-book-mockup-hover {
+  width: 90%;
+  margin-top: -30px;
+  margin-left: 25px;
 }
 
 .footer-text-technique {

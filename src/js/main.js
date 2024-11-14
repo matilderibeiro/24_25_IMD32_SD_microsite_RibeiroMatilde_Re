@@ -1,7 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const img1 = document.querySelector(".scroll-1");
 const img2 = document.querySelector(".scroll-2");
@@ -85,7 +86,7 @@ gsap.to(img7, {
 gsap.to(img8, {
   scrollTrigger: {
     trigger: img8,
-    start: "top 60%",
+    start: "top 10%",
     scrub: true,
   },
   y: 40,
@@ -93,14 +94,16 @@ gsap.to(img8, {
 });
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 const titleheader = document.querySelector("header");
 const titleImg = document.querySelector(".header-title-intro");
 const butterfly = document.querySelector(".header-butterfly");
 
 var tl = gsap.timeline({
-  onComplete: () => (document.body.style.overflowY = "auto"),
+  onComplete: () => (
+    (document.body.style.overflowY = "auto"),
+    document.querySelector("main.is-diseaper").classList.remove("is-diseaper")
+  ),
 });
 tl.to(titleImg, { opacity: 1 });
 tl.to(titleImg, { duration: 3, opacity: 0 });
@@ -138,14 +141,37 @@ ScrollTrigger.addEventListener("refresh", () => {
   }
 });
 
-const scrollHorizontal = document.querySelector(".pin-wrap");
+gsap.registerPlugin("ScrollTo");
 
-gsap.to(scrollHorizontal, {
-  scrollTrigger: {
-    trigger: scrollHorizontal,
-    start: "center center",
-    scrub: true,
-    pin: true,
-  },
-  x: 4400,
+var btnBefore = document.querySelector("#js-btn-before");
+var btnNow = document.querySelector("#js-btn-now");
+const btnChoisePresent = document.querySelector("#js-btn-choise-present");
+const btnChoisePast = document.querySelector("#js-btn-choise-past");
+
+var storyBefore = document.querySelector(".story-before");
+var storyNow = document.querySelector(".story-now");
+var choise = document.querySelector(".chose");
+
+btnBefore.addEventListener("click", function () {
+  storyBefore.classList.remove("is-hidden");
+  storyNow.classList.add("is-hidden");
+  gsap.to(window, { duration: 1, scrollTo: ".story-before" });
+});
+
+btnNow.addEventListener("click", function () {
+  storyNow.classList.remove("is-hidden");
+  storyBefore.classList.add("is-hidden");
+  gsap.to(window, { duration: 1, scrollTo: ".story-now" });
+});
+
+btnChoisePresent.addEventListener("click", function () {
+  storyNow.classList.add("is-hidden");
+  storyBefore.classList.add("is-hidden");
+  gsap.to(window, { scrollTo: ".chose" });
+});
+
+btnChoisePast.addEventListener("click", function () {
+  storyNow.classList.add("is-hidden");
+  storyBefore.classList.add("is-hidden");
+  gsap.to(window, { scrollTo: ".chose" });
 });

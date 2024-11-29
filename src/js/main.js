@@ -93,8 +93,6 @@ gsap.to(img8, {
   opacity: 1,
 });
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 const titleheader = document.querySelector("header");
 const titleImg = document.querySelector(".header-title-intro");
 const butterfly = document.querySelector(".header-butterfly");
@@ -177,7 +175,7 @@ btnChoisePast.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   gsap.to(".scroll-container-view", {
     scrollTrigger: {

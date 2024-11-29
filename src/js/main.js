@@ -233,3 +233,4 @@ btnChoisePast.addEventListener("click", function () {
 
 //   ScrollTrigger.refresh();
 // });
+// script.js

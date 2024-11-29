@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
       end: "+=600",
       scrub: true,
     },
-    x: "-500vw",
+    x: "-350vw",
   });
 
   gsap.to(".scroll-train", {
